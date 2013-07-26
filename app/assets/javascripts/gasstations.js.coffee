@@ -1,8 +1,9 @@
-app = angular.module("Gasstations", ["ngResource"])
+app = angular.module("Gasstations", ["ngResource"]);
 
-@GasstationCtrl = ($scope, $resource) ->
-  $scope.asd = "qwe"
-  Station = $resource("/stations/:id", {id: "@id"})
-  $scope.stations = Station.query
+app.factory "Station", ["$resource", ($resource) ->
+  $resource("/stations/:id", {id: "@id"})
+]
 
-  
+@GasstationCtrl = ["$scope", "Station", ($scope, Station) ->
+  $scope.stations = Station.query()
+]
