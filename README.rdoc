@@ -1,28 +1,28 @@
-== README
+rails new gasstations
+cd gasstations
+rails g controller gasstations index
+rails g resource station cbid:integer name:string city:string address:string latitude:decimal longtitude:decimal
+rails g model Entry station:references fuel:string price:decimal added:date
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+station = Station.create(
+   cbid: "820", 
+   name: "Agip", 
+   city: "Praha 10", 
+   address: "V Korytech",
+   latitude: 50.0534, 
+   longtitude: 14.5191
+)
 
-Things you may want to cover:
+Entry.create(
+  station_id: station.id,
+  fuel: "Natural 95",
+  price: 37.20,
+  added: DateTime.new(2013, 7, 23)
+)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Entry.create(
+  station_id: station.id,
+  fuel: "Natural 95",
+  price: 37.40,
+  added: DateTime.new(2013, 7, 26)
+)
