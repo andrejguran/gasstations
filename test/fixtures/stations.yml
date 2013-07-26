@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  cbid: 1
+  name: MyString
+  city: MyString
+  address: MyString
+  latitude: 9.99
+  longtitude: 9.99
+
+two:
+  cbid: 1
+  name: MyString
+  city: MyString
+  address: MyString
+  latitude: 9.99
+  longtitude: 9.99
