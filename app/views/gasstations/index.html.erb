@@ -1,6 +1,7 @@
-<div ng-controller="GasstationCtrl">
-  <h1>Gasstations</h1>
+index
+  <h1>Gasstations{{action}}</h1>
   <ul>
-    <li ng-repeat="station in stations">{{station.name}}</li>
+    <li ng-repeat="station in stations">
+      <a href="#/{{station.id}}">{{station.name}}</a>
+    </li>
   </ul>
-</div>

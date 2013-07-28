@@ -1,7 +1,13 @@
 Gasstations::Application.routes.draw do
   resources :stations
 
-  root "gasstations#index"
+  root 'gasstations#all'
+
+  get '/index' => "gasstations#index"
+  get '/show' => "gasstations#show"
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
