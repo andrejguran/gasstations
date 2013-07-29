@@ -3,12 +3,18 @@
 <head>
   <title>Gasstations</title>
   <%= stylesheet_link_tag    "application", media: "all" %>
+  <%= stylesheet_link_tag "//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" %>
   <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js" %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-
-<%= yield %>
-
+  <div class="container">
+    <div class="navbar navbar-inverse">
+      <a href="/" class="navbar-brand" href="#">Gasstations</a>      
+    </div>
+    <%= yield %>
+  </div>
 </body>
 </html>
