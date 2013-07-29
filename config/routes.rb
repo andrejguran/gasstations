@@ -1,10 +1,7 @@
 Gasstations::Application.routes.draw do
   resources :stations
 
-  root 'gasstations#all'
-
-  get '/index' => "gasstations#index"
-  get '/show' => "gasstations#show"
+  root 'gasstations#index'
 
 
 
