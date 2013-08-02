@@ -2,7 +2,7 @@
   <div class="col-lg-8">
   <h2>{{station.name}} - {{station.city}} {{station.address}}</h2>
   <h3>Entries{{ants}}</h3>
-  <table>
+  <table class="table table-hover">
   <thead>
     <tr>
       <th>Price</th>
@@ -12,9 +12,9 @@
   </thead>
   <tbody>
     <tr ng-repeat="entry in station.entries">
-      <th>{{fuel}}</th>
-      <th>{{station.price}}</th>
-      <th>{{added}}</th>
+      <th>{{entry.price}}</th>
+      <th>{{entry.fuel}}</th>
+      <th>{{entry.added}}</th>
       {{entry}}
     </tr>
   </tbody>
