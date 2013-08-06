@@ -31,6 +31,8 @@ gem 'jquery-rails'
 
 gem 'angularjs-rails'
 
+gem 'nokogiri'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
