@@ -1,0 +1,9 @@
+﻿ var pointted = addMarker( point, 'Kont.cz (NOVA-KONT) - Praha 4 - Opatovská - Hlavní město Praha', 'green', 1, bublina, 0 );
+	 var point = new google.maps.LatLng(50.1096, 14.6394);
+	var bublina = 'Shell<br>Praha 9<br>D11 - Horní Počernice<br>Hlavní město Praha<br><br><a href="http://www.ceskybenzin.cz/index.php?akce=aktualiz&idp=2">Klikni pro aktualizaci cen na této ČS</a>.';
+ var pointted = addMarker( point, 'Shell - Praha 9 - D11 - Horní Počernice - Hlavní město Praha', 'green', 820, bublina, 0 );
+	 var point = new google.maps.LatLng(50.0374, 14.4895);
+	var bublina = 'Agip<br>Praha 4<br>D1 Chodov<br>Hlavní město Praha<br><br><a href="http://www.ceskybenzin.cz/index.php?akce=aktualiz&idp=3">Klikni pro aktualizaci cen na této ČS</a>.';
+ var pointted = addMarker( point, 'Agip - Praha 4 - D1 Chodov - Hlavní město Praha', 'green', 3, bublina, 0 );
+	 var point = new google.maps.LatLng(50.0255, 14.4982);
+	var bublina = 'Shell<br>Praha 4<br>Roztylská<br>Hlavní město Praha<br><br><a href="http://www.ceskybenzin.cz/index.php?akce=aktualiz&idp=4">Klikni pro aktualizaci cen na této ČS</a>.';
